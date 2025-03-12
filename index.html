@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Meu Amor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url(tema\ fundo.jpg) no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #d6336c;
+            font-size: 28px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(214, 51, 108, 0.2);
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 18px;
+            font-style: italic;
+            line-height: 1.6;
+            color: #555;
+            background: #ffe6ea;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(214, 51, 108, 0.1);
+        }
+        .photo-gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .photo-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .photo-caption {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .photo-gallery img {
+            width: 80%;
+            max-width: 400px;
+            border-radius: 8px;
+        }
+        audio {
+            margin-top: 20px;
+        }
+        .love-button {
+            background-color: red;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Para o amor da minha vida ❤️</h1>
+        <p>Amor, fefe, minha rainha, não sou muito bom com presentes mas fiz esse site com o coração pra você, para destacar sua perfeição e te mostrar o quão feliz você me deixa só estando ao meu lado. Você já está aprisionada a mim, vamos viver juntos até nossa morte bem velhinhos, queira voce ou nao haha.</p>
+        <div class="photo-gallery">
+            <div class="photo-container">
+                <div class="photo-caption">Eu</div>
+                <img src="foto 1.jpg" alt="Eu">
+            </div>
+            <div class="photo-container">
+                <div class="photo-caption">Te amo</div>
+                <img src="foto 2.jpg" alt="Te amo">
+            </div>
+            <div class="photo-container">
+                <div class="photo-caption">Imensamente</div>
+                <img src="foto 3.jpg" alt="Imensamente">
+            </div>
+        </div>
+        <audio autoplay loop>
+            <source src="musica-romantica.mp3" type="audio/mpeg">
+            Seu navegador não suporta a reprodução de áudio.
+        </audio>
+        <button class="love-button" onclick="increaseButtonSize()">Eu te amo</button>
+    </div>
+    <script>
+        function increaseButtonSize() {
+            var button = document.querySelector('.love-button');
+            var currentSize = parseFloat(window.getComputedStyle(button).fontSize);
+            button.style.fontSize = (currentSize + 2) + 'px';
+            button.style.padding = (parseFloat(button.style.padding || 10) + 2) + 'px';
+        }
+    </script>
+</body>
+</html>
